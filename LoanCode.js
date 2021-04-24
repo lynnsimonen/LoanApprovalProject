@@ -20,10 +20,11 @@ $(document).ready(function () {
 
     //function button for loan application input
     function loanAppStart() {
+        //SHOW THE LINES OF HTML NEEDED TO APPLY
         $("h4").show();
         $(".input").show();
         $("button#loanAppDecide").show();
-
+        //HIDE LINES NOT NEEDED (ALSO SET UP FOR REPEATED APPLICATIONS)
         $("h5").hide();
         $("output#loanApprove").hide();
         $("output#loanDenyCS").hide();
@@ -31,12 +32,13 @@ $(document).ready(function () {
     }
 
     function loanAppDecide() {
-
+        //CAPTURE THE INPUT WITH VARIABLES
         let salary = parseFloat($("input#salary").val());
         let creditScore = parseFloat($("input#creditscore").val());
         let jobHistory = parseFloat($("input#job").val());
 
         //begin determining whether loan is approved or not with if else statements
+        //SET OUTPUT AT EACH DECISION SECTION (AND HIDE/SHOW ANY NECESSARY LINES)
         if (salary >= 40000) {
             if (creditScore >= 600) {
                 $("button#loanAppDecide").hide();
