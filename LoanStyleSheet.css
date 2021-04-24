@@ -1,0 +1,53 @@
+body {
+    background-image: url("Beach.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div#form {
+
+    text-align: center;
+    margin: 10%;
+    width: 50%;
+    height: 400px;
+    padding: 10px;
+    background-color: #F1F0EE;
+}
+
+input {
+    display: inline-block;
+    float: left;
+    width: 300px;
+    margin-left: 20px;
+}
+
+label.input {
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 400px;
+    text-align: left;
+}
+output {
+    display: inline-block;
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+    line-height: 95%;
+}
+label.output {
+    display: inline-block;
+    float: left;
+    clear: left;
+    width:200px;
+    text-align: left;
+}
+button {
+    padding: 2px;
+    alignment: center;
+    background-color: #006198;
+    color: #D3DCE3;
+}
+button#loanAppDecide {
+    align-self: center;
+}
